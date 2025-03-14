@@ -1,0 +1,1976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio d'Adrien Roussel</title>
+  <style>
+    /* Reset CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    /* Add your custom styles here */
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  
+<div id="root">
+  <header id="header" class="bg-neutral-900 text-white">
+    <nav class="container mx-auto px-4 py-4">
+      <div class="flex items-center justify-between">
+        <div class="text-2xl font-bold text-green-500">
+          <a href="#hero" class="flex items-center">
+            <span class="mr-2">AR</span>
+            <span class="hidden md:inline">Adrien Roussel</span>
+          </a>
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <ul class="hidden md:flex space-x-6">
+          <li><a href="#hero" class="hover:text-green-400 transition-colors duration-300">Accueil</a></li>
+          <li><a href="#competences" class="hover:text-green-400 transition-colors duration-300">Compétences</a></li>
+          <li><a href="#projets" class="hover:text-green-400 transition-colors duration-300">Projets</a></li>
+          <li><a href="#experiences" class="hover:text-green-400 transition-colors duration-300">Expériences</a></li>
+          <li><a href="#formations" class="hover:text-green-400 transition-colors duration-300">Formations</a></li>
+          <li><a href="#temoignages" class="hover:text-green-400 transition-colors duration-300">Témoignages</a></li>
+          <li><a href="#contact" class="hover:text-green-400 transition-colors duration-300">Contact</a></li>
+        </ul>
+        
+        <!-- Mobile Navigation Button -->
+        <button 
+          type="button" 
+          class="md:hidden text-white focus:outline-none" 
+          id="mobile-menu-button"
+          aria-label="Menu de navigation"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Mobile Navigation Menu -->
+      <div id="mobile-menu" class="hidden md:hidden pt-4" aria-labelledby="mobile-menu-button">
+        <ul class="flex flex-col space-y-3">
+          <li><a href="#hero" class="block py-2 px-4 hover:bg-green-700 rounded transition-colors duration-300">Accueil</a></li>
+          <li><a href="#competences" class="block py-2 px-4 hover:bg-green-700 rounded transition-colors duration-300">Compétences</a></li>
+          <li><a href="#projets" class="block py-2 px-4 hover:bg-green-700 rounded transition-colors duration-300">Projets</a></li>
+          <li><a href="#experiences" class="block py-2 px-4 hover:bg-green-700 rounded transition-colors duration-300">Expériences</a></li>
+          <li><a href="#formations" class="block py-2 px-4 hover:bg-green-700 rounded transition-colors duration-300">Formations</a></li>
+          <li><a href="#temoignages" class="block py-2 px-4 hover:bg-green-700 rounded transition-colors duration-300">Témoignages</a></li>
+          <li><a href="#contact" class="block py-2 px-4 hover:bg-green-700 rounded transition-colors duration-300">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+</div>
+
+
+<div id="root" class="relative overflow-hidden">
+  <section id="hero" class="min-h-screen bg-neutral-900 text-white relative overflow-hidden">
+    <!-- Background effects -->
+    <div class="absolute inset-0 z-0">
+      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-green-900/30 to-neutral-900"></div>
+      <div class="absolute top-0 left-0 w-full h-full">
+        <div class="absolute top-1/4 left-1/4 w-32 h-32 bg-green-500 rounded-full filter blur-3xl opacity-10 animate-pulse"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-32 h-32 bg-green-400 rounded-full filter blur-3xl opacity-10 animate-pulse"></div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="relative z-10 px-6 py-4 flex justify-between items-center">
+      <div class="text-xl font-bold text-green-400">Adrien Roussel</div>
+      <div class="flex items-center space-x-4">
+        <button aria-label="Français" class="transition-transform hover:scale-110">
+          <img src="http://adrien-roussel.com/images/icons/french.svg" alt="Français" width="40" height="40" class="w-8 h-8" />
+        </button>
+        <button aria-label="English" class="transition-transform hover:scale-110 opacity-50">
+          <img src="http://adrien-roussel.com/images/icons/english.svg" alt="English" width="40" height="40" class="w-8 h-8" />
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero content -->
+    <div class="container mx-auto px-6 pt-12 pb-20 flex flex-col-reverse md:flex-row items-center justify-between relative z-10">
+      <div class="w-full md:w-1/2 space-y-6 mt-12 md:mt-0">
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+          <span class="block text-white">Bonjour, je suis</span>
+          <span class="block text-green-400 mt-2">Adrien Roussel</span>
+        </h1>
+        <p class="text-xl text-neutral-300">
+          Développeur et Game Designer passionné par la création d'expériences interactives et immersives.
+        </p>
+        <div class="pt-4 flex flex-wrap gap-3">
+          <a href="#projets" class="bg-green-600 hover:bg-green-700 text-white font-medium px-6 py-3 rounded-lg transition-all transform hover:scale-105 hover:shadow-lg flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+            </svg>
+            Voir mes Projets
+          </a>
+          <a href="#contact" class="bg-neutral-800 hover:bg-neutral-700 border border-green-500 text-green-400 font-medium px-6 py-3 rounded-lg transition-all transform hover:scale-105 hover:shadow-lg">
+            Me Contacter
+          </a>
+        </div>
+        <div class="flex space-x-4 pt-2">
+          <a href="https://linkedin.com" aria-label="LinkedIn" class="text-neutral-400 hover:text-green-400 transition-colors">
+            <img src="http://adrien-roussel.com/images/icons/linkedin-logo.svg" alt="LinkedIn" width="30" height="32" class="w-6 h-6" />
+          </a>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 flex justify-center relative">
+        <div class="w-64 h-64 md:w-80 md:h-80 relative">
+          <div class="absolute inset-0 bg-green-500 rounded-full blur-2xl opacity-20 animate-pulse"></div>
+          <img 
+            src="http://adrien-roussel.com/images/pp3.jpg" 
+            alt="Adrien Roussel" 
+            class="rounded-full w-full h-full object-cover border-4 border-green-500 relative z-10 shadow-xl"
+          />
+          <div class="absolute -bottom-2 -right-2 bg-neutral-900 rounded-full p-3 border-2 border-green-500 transform rotate-12 animate-bounce shadow-lg">
+            <img src="http://adrien-roussel.com/images/icons/code-icon.svg" alt="Code" width="24" height="25" class="w-6 h-6" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center z-10">
+      <span class="text-green-400 text-sm mb-2">Découvrir</span>
+      <div class="w-6 h-10 border-2 border-green-400 rounded-full flex justify-center">
+        <div class="w-2 h-2 bg-green-400 rounded-full mt-2 animate-bounce"></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<div id="root">
+  <section id="competences" class="py-20 bg-neutral-900 text-white relative overflow-hidden">
+    <!-- Background elements -->
+    <div class="absolute inset-0 z-0 opacity-10">
+      <div class="absolute top-0 left-0 w-32 h-32 bg-green-500 rounded-full filter blur-3xl"></div>
+      <div class="absolute bottom-0 right-0 w-32 h-32 bg-green-500 rounded-full filter blur-3xl"></div>
+      <div class="absolute top-1/2 right-1/4 w-24 h-24 bg-green-400 rounded-full filter blur-3xl"></div>
+    </div>
+    
+    <!-- Binary elements for gaming theme -->
+    <div class="absolute inset-0 z-0 opacity-5 select-none pointer-events-none">
+      <div class="absolute top-10 left-10 text-lg text-green-500">010110</div>
+      <div class="absolute top-20 right-20 text-lg text-green-500">101001</div>
+      <div class="absolute bottom-10 left-1/4 text-lg text-green-500">110101</div>
+      <div class="absolute bottom-30 right-1/3 text-lg text-green-500">010010</div>
+    </div>
+
+    <div class="container mx-auto px-6 relative z-10">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4 inline-block relative">
+          <span class="text-green-400">Comp</span>étences
+          <div class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-green-500 to-transparent"></div>
+        </h2>
+        <p class="text-neutral-400 max-w-2xl mx-auto">Mes compétences techniques et créatives acquises au fil de mes projets et formations</p>
+      </div>
+
+      <!-- Main Skills Categories -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-16">
+        <!-- Development -->
+        <div class="bg-neutral-800 rounded-xl p-6 shadow-lg border border-neutral-700 transform transition-all duration-300 hover:-translate-y-2 hover:border-green-500 group">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mr-4">
+              <img src="http://adrien-roussel.com/images/icons/code-icon.svg" alt="Développement" width="24" height="25" class="w-6 h-6"/>
+            </div>
+            <h3 class="text-xl font-bold text-white group-hover:text-green-400 transition-colors">Développement</h3>
+          </div>
+          <p class="text-neutral-400 mb-6">Conception et développement d'applications et jeux interactifs avec diverses technologies modernes.</p>
+          <div class="space-y-3">
+            <div class="flex items-center">
+              <div class="w-full bg-neutral-700 rounded-full h-2">
+                <div class="bg-green-500 h-2 rounded-full" style="width: 95%"></div>
+              </div>
+              <span class="ml-2 text-sm text-neutral-400">C#</span>
+            </div>
+            <div class="flex items-center">
+              <div class="w-full bg-neutral-700 rounded-full h-2">
+                <div class="bg-green-500 h-2 rounded-full" style="width: 80%"></div>
+              </div>
+              <span class="ml-2 text-sm text-neutral-400">JavaScript</span>
+            </div>
+            <div class="flex items-center">
+              <div class="w-full bg-neutral-700 rounded-full h-2">
+                <div class="bg-green-500 h-2 rounded-full" style="width: 85%"></div>
+              </div>
+              <span class="ml-2 text-sm text-neutral-400">C++</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Design -->
+        <div class="bg-neutral-800 rounded-xl p-6 shadow-lg border border-neutral-700 transform transition-all duration-300 hover:-translate-y-2 hover:border-green-500 group">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mr-4">
+              <img src="http://adrien-roussel.com/images/icons/pen-icon.svg" alt="Game Design" width="24" height="25" class="w-6 h-6"/>
+            </div>
+            <h3 class="text-xl font-bold text-white group-hover:text-green-400 transition-colors">Game Design</h3>
+          </div>
+          <p class="text-neutral-400 mb-6">Conception de mécaniques de jeu innovantes, systèmes d'économie et expériences utilisateur immersives.</p>
+          <div class="space-y-3">
+            <div class="flex items-center">
+              <div class="w-full bg-neutral-700 rounded-full h-2">
+                <div class="bg-green-500 h-2 rounded-full" style="width: 90%"></div>
+              </div>
+              <span class="ml-2 text-sm text-neutral-400">Unity</span>
+            </div>
+            <div class="flex items-center">
+              <div class="w-full bg-neutral-700 rounded-full h-2">
+                <div class="bg-green-500 h-2 rounded-full" style="width: 85%"></div>
+              </div>
+              <span class="ml-2 text-sm text-neutral-400">Conception de niveaux</span>
+            </div>
+            <div class="flex items-center">
+              <div class="w-full bg-neutral-700 rounded-full h-2">
+                <div class="bg-green-500 h-2 rounded-full" style="width: 88%"></div>
+              </div>
+              <span class="ml-2 text-sm text-neutral-400">Mécaniques de jeu</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Communication -->
+        <div class="bg-neutral-800 rounded-xl p-6 shadow-lg border border-neutral-700 transform transition-all duration-300 hover:-translate-y-2 hover:border-green-500 group">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mr-4">
+              <img src="http://adrien-roussel.com/images/icons/microphone-icon.svg" alt="Communication" width="24" height="25" class="w-6 h-6"/>
+            </div>
+            <h3 class="text-xl font-bold text-white group-hover:text-green-400 transition-colors">Communication</h3>
+          </div>
+          <p class="text-neutral-400 mb-6">Compétences en communication et travail d'équipe essentielles pour la réussite des projets collaboratifs.</p>
+          <div class="space-y-3">
+            <div class="flex items-center">
+              <div class="w-full bg-neutral-700 rounded-full h-2">
+                <div class="bg-green-500 h-2 rounded-full" style="width: 92%"></div>
+              </div>
+              <span class="ml-2 text-sm text-neutral-400">Travail d'équipe</span>
+            </div>
+            <div class="flex items-center">
+              <div class="w-full bg-neutral-700 rounded-full h-2">
+                <div class="bg-green-500 h-2 rounded-full" style="width: 85%"></div>
+              </div>
+              <span class="ml-2 text-sm text-neutral-400">Présentation</span>
+            </div>
+            <div class="flex items-center">
+              <div class="w-full bg-neutral-700 rounded-full h-2">
+                <div class="bg-green-500 h-2 rounded-full" style="width: 80%"></div>
+              </div>
+              <span class="ml-2 text-sm text-neutral-400">Documentation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technologies Grid -->
+      <h3 class="text-2xl font-bold mb-8 text-center">
+        <span class="text-green-400">Tech</span>nologies
+      </h3>
+      
+      <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 md:gap-8">
+        <!-- C# -->
+        <div class="flex flex-col items-center justify-center p-4 bg-neutral-800 rounded-lg hover:bg-neutral-700 transition-all transform hover:scale-105 group">
+          <img src="http://adrien-roussel.com/images/icons/file-c-sharp.svg" alt="C#" width="42" height="47" class="w-12 h-12 mb-3 transition-transform group-hover:rotate-12"/>
+          <span class="text-sm text-neutral-300 group-hover:text-green-400">C#</span>
+        </div>
+        
+        <!-- C++ -->
+        <div class="flex flex-col items-center justify-center p-4 bg-neutral-800 rounded-lg hover:bg-neutral-700 transition-all transform hover:scale-105 group">
+          <img src="http://adrien-roussel.com/images/icons/file-cpp.svg" alt="C++" width="42" height="42" class="w-12 h-12 mb-3 transition-transform group-hover:rotate-12"/>
+          <span class="text-sm text-neutral-300 group-hover:text-green-400">C++</span>
+        </div>
+        
+        <!-- HTML -->
+        <div class="flex flex-col items-center justify-center p-4 bg-neutral-800 rounded-lg hover:bg-neutral-700 transition-all transform hover:scale-105 group">
+          <img src="http://adrien-roussel.com/images/icons/file-html.svg" alt="HTML" width="42" height="48" class="w-12 h-12 mb-3 transition-transform group-hover:rotate-12"/>
+          <span class="text-sm text-neutral-300 group-hover:text-green-400">HTML</span>
+        </div>
+        
+        <!-- JavaScript -->
+        <div class="flex flex-col items-center justify-center p-4 bg-neutral-800 rounded-lg hover:bg-neutral-700 transition-all transform hover:scale-105 group">
+          <img src="http://adrien-roussel.com/images/icons/file-js.svg" alt="JavaScript" width="42" height="42" class="w-12 h-12 mb-3 transition-transform group-hover:rotate-12"/>
+          <span class="text-sm text-neutral-300 group-hover:text-green-400">JavaScript</span>
+        </div>
+        
+        <!-- CSS -->
+        <div class="flex flex-col items-center justify-center p-4 bg-neutral-800 rounded-lg hover:bg-neutral-700 transition-all transform hover:scale-105 group">
+          <img src="http://adrien-roussel.com/images/icons/file-css.svg" alt="CSS" width="42" height="42" class="w-12 h-12 mb-3 transition-transform group-hover:rotate-12"/>
+          <span class="text-sm text-neutral-300 group-hover:text-green-400">CSS</span>
+        </div>
+        
+        <!-- PHP -->
+        <div class="flex flex-col items-center justify-center p-4 bg-neutral-800 rounded-lg hover:bg-neutral-700 transition-all transform hover:scale-105 group">
+          <img src="http://adrien-roussel.com/images/icons/php.svg" alt="PHP" width="42" height="42" class="w-12 h-12 mb-3 transition-transform group-hover:rotate-12"/>
+          <span class="text-sm text-neutral-300 group-hover:text-green-400">PHP</span>
+        </div>
+        
+        <!-- Unity -->
+        <div class="flex flex-col items-center justify-center p-4 bg-neutral-800 rounded-lg hover:bg-neutral-700 transition-all transform hover:scale-105 group">
+          <img src="http://adrien-roussel.com/images/icons/unity.svg" alt="Unity" width="42" height="43" class="w-12 h-12 mb-3 transition-transform group-hover:rotate-12"/>
+          <span class="text-sm text-neutral-300 group-hover:text-green-400">Unity</span>
+        </div>
+        
+        <!-- VS Code -->
+        <div class="flex flex-col items-center justify-center p-4 bg-neutral-800 rounded-lg hover:bg-neutral-700 transition-all transform hover:scale-105 group">
+          <img src="http://adrien-roussel.com/images/icons/vscode.svg" alt="VS Code" width="42" height="42" class="w-12 h-12 mb-3 transition-transform group-hover:rotate-12"/>
+          <span class="text-sm text-neutral-300 group-hover:text-green-400">VS Code</span>
+        </div>
+        
+        <!-- Figma -->
+        <div class="flex flex-col items-center justify-center p-4 bg-neutral-800 rounded-lg hover:bg-neutral-700 transition-all transform hover:scale-105 group">
+          <img src="http://adrien-roussel.com/images/icons/figma-logo.svg" alt="Figma" width="42" height="42" class="w-12 h-12 mb-3 transition-transform group-hover:rotate-12"/>
+          <span class="text-sm text-neutral-300 group-hover:text-green-400">Figma</span>
+        </div>
+        
+        <!-- Vue -->
+        <div class="flex flex-col items-center justify-center p-4 bg-neutral-800 rounded-lg hover:bg-neutral-700 transition-all transform hover:scale-105 group">
+          <img src="http://adrien-roussel.com/images/icons/file-vue.svg" alt="Vue" width="42" height="42" class="w-12 h-12 mb-3 transition-transform group-hover:rotate-12"/>
+          <span class="text-sm text-neutral-300 group-hover:text-green-400">Vue</span>
+        </div>
+        
+        <!-- GPT -->
+        <div class="flex flex-col items-center justify-center p-4 bg-neutral-800 rounded-lg hover:bg-neutral-700 transition-all transform hover:scale-105 group">
+          <img src="http://adrien-roussel.com/images/icons/gpt.svg" alt="GPT" width="42" height="42" class="w-12 h-12 mb-3 transition-transform group-hover:rotate-12"/>
+          <span class="text-sm text-neutral-300 group-hover:text-green-400">GPT</span>
+        </div>
+        
+        <!-- PHPMyAdmin -->
+        <div class="flex flex-col items-center justify-center p-4 bg-neutral-800 rounded-lg hover:bg-neutral-700 transition-all transform hover:scale-105 group">
+          <img src="http://adrien-roussel.com/images/icons/phpmyadmin.svg" alt="PHPMyAdmin" width="42" height="42" class="w-12 h-12 mb-3 transition-transform group-hover:rotate-12"/>
+          <span class="text-sm text-neutral-300 group-hover:text-green-400">PHPMyAdmin</span>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="mt-20">
+        <h3 class="text-2xl font-bold mb-8 text-center">
+          <span class="text-green-400">Soft</span> Skills
+        </h3>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="bg-neutral-800 p-4 rounded-lg flex items-center">
+            <div class="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
+            <span>Travail d'équipe</span>
+          </div>
+          <div class="bg-neutral-800 p-4 rounded-lg flex items-center">
+            <div class="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
+            <span>Résolution de problèmes</span>
+          </div>
+          <div class="bg-neutral-800 p-4 rounded-lg flex items-center">
+            <div class="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
+            <span>Créativité</span>
+          </div>
+          <div class="bg-neutral-800 p-4 rounded-lg flex items-center">
+            <div class="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
+            <span>Adaptabilité</span>
+          </div>
+          <div class="bg-neutral-800 p-4 rounded-lg flex items-center">
+            <div class="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
+            <span>Communication</span>
+          </div>
+          <div class="bg-neutral-800 p-4 rounded-lg flex items-center">
+            <div class="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
+            <span>Organisation</span>
+          </div>
+          <div class="bg-neutral-800 p-4 rounded-lg flex items-center">
+            <div class="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
+            <span>Autonomie</span>
+          </div>
+          <div class="bg-neutral-800 p-4 rounded-lg flex items-center">
+            <div class="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
+            <span>Gestion du temps</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div class="mt-20">
+        <h3 class="text-2xl font-bold mb-8 text-center">
+          <span class="text-green-400">Lang</span>ues
+        </h3>
+        
+        <div class="flex flex-col md:flex-row justify-center gap-8">
+          <div class="bg-neutral-800 p-6 rounded-lg flex flex-col items-center">
+            <img src="http://adrien-roussel.com/images/icons/french.svg" alt="Français" width="40" height="40" class="w-12 h-12 mb-4"/>
+            <h4 class="text-lg font-bold mb-2">Français</h4>
+            <div class="flex space-x-1">
+              <div class="w-4 h-4 bg-green-500 rounded-full"></div>
+              <div class="w-4 h-4 bg-green-500 rounded-full"></div>
+              <div class="w-4 h-4 bg-green-500 rounded-full"></div>
+              <div class="w-4 h-4 bg-green-500 rounded-full"></div>
+              <div class="w-4 h-4 bg-green-500 rounded-full"></div>
+            </div>
+            <span class="text-sm text-neutral-400 mt-2">Langue maternelle</span>
+          </div>
+          
+          <div class="bg-neutral-800 p-6 rounded-lg flex flex-col items-center">
+            <img src="http://adrien-roussel.com/images/icons/english.svg" alt="Anglais" width="40" height="40" class="w-12 h-12 mb-4"/>
+            <h4 class="text-lg font-bold mb-2">Anglais</h4>
+            <div class="flex space-x-1">
+              <div class="w-4 h-4 bg-green-500 rounded-full"></div>
+              <div class="w-4 h-4 bg-green-500 rounded-full"></div>
+              <div class="w-4 h-4 bg-green-500 rounded-full"></div>
+              <div class="w-4 h-4 bg-green-500 rounded-full"></div>
+              <div class="w-4 h-4 bg-neutral-600 rounded-full"></div>
+            </div>
+            <span class="text-sm text-neutral-400 mt-2">Courant</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="mt-20 text-center">
+        <a href="#projets" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg transition-all transform hover:scale-105 group">
+          <span class="group-hover:mr-2 transition-all">Voir mes projets</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block ml-1 group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<div id="root">
+  <section id="projets" class="py-20 bg-neutral-900 text-white relative overflow-hidden">
+    <!-- Background effect -->
+    <div class="absolute inset-0 z-0 opacity-10">
+      <div class="absolute top-1/4 left-1/3 w-64 h-64 bg-green-500 rounded-full filter blur-3xl"></div>
+      <div class="absolute bottom-1/4 right-1/3 w-64 h-64 bg-green-500 rounded-full filter blur-3xl"></div>
+    </div>
+    
+    <!-- Gaming theme elements -->
+    <div class="absolute inset-0 z-0 opacity-10 select-none pointer-events-none">
+      <div class="absolute top-20 left-10 text-xl text-green-500">[ ]</div>
+      <div class="absolute top-40 right-20 text-xl text-green-500">{ }</div>
+      <div class="absolute bottom-20 left-1/4 text-xl text-green-500">&lt; /&gt;</div>
+      <div class="absolute bottom-40 right-1/3 text-xl text-green-500">$ _</div>
+    </div>
+
+    <div class="container mx-auto px-6 relative z-10">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4 inline-block relative">
+          <span class="text-green-400">Pro</span>jets
+          <div class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-green-500 to-transparent"></div>
+        </h2>
+        <p class="text-neutral-400 max-w-2xl mx-auto">Découvrez mes projets en développement de jeux vidéo et applications web</p>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <!-- Project 1: Broken Alchemy -->
+        <div class="bg-neutral-800 rounded-xl overflow-hidden shadow-xl border border-neutral-700 transform transition-all duration-300 hover:scale-[1.02] hover:border-green-500 group">
+          <div class="relative">
+            <img src="http://adrien-roussel.com/images/BrokenAlchemyBackground.png" alt="Broken Alchemy" class="w-full h-64 object-cover object-center">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-900 to-transparent opacity-80"></div>
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <button class="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 transform transition-transform hover:scale-110">
+                <img src="http://adrien-roussel.com/images/icons/play2.svg" alt="Play" width="100" height="100" class="w-8 h-8">
+              </button>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-center mb-4">
+              <h3 class="text-2xl font-bold group-hover:text-green-400 transition-colors">Broken Alchemy</h3>
+              <span class="text-xs font-medium bg-green-500/20 text-green-400 py-1 px-2 rounded">Jeu Vidéo</span>
+            </div>
+            <p class="text-neutral-400 mb-4">Un jeu de stratégie et d'alchimie où vous devez créer des combinaisons de potions pour vaincre vos ennemis.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-neutral-700 px-2 py-1 rounded">Unity</span>
+              <span class="text-xs bg-neutral-700 px-2 py-1 rounded">C#</span>
+              <span class="text-xs bg-neutral-700 px-2 py-1 rounded">Game Design</span>
+            </div>
+            <div class="mt-4">
+              <button class="text-green-400 hover:text-green-300 font-medium flex items-center group/btn">
+                Voir le projet
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 transform transition-transform group-hover/btn:translate-x-1" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6">
+              <div class="relative">
+                <div class="video-trigger">
+                  <video poster="http://adrien-roussel.com/images/BrokenAlchemyBackground.png" class="w-full h-32 object-cover rounded-lg">
+                    <source src="http://adrien-roussel.com/videos/trailer_BA.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Salt en Pepper -->
+        <div class="bg-neutral-800 rounded-xl overflow-hidden shadow-xl border border-neutral-700 transform transition-all duration-300 hover:scale-[1.02] hover:border-green-500 group">
+          <div class="relative">
+            <img src="http://adrien-roussel.com/images/SaltenpepperBackground.png" alt="Salt en Pepper" class="w-full h-64 object-cover object-center">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-900 to-transparent opacity-80"></div>
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <button class="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 transform transition-transform hover:scale-110">
+                <img src="http://adrien-roussel.com/images/icons/play2.svg" alt="Play" width="100" height="100" class="w-8 h-8">
+              </button>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-center mb-4">
+              <h3 class="text-2xl font-bold group-hover:text-green-400 transition-colors">Salt en Pepper</h3>
+              <span class="text-xs font-medium bg-green-500/20 text-green-400 py-1 px-2 rounded">Jeu Vidéo</span>
+            </div>
+            <p class="text-neutral-400 mb-4">Un jeu coopératif mettant en scène Sel et Poivre dans leurs aventures culinaires.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-neutral-700 px-2 py-1 rounded">Unity</span>
+              <span class="text-xs bg-neutral-700 px-2 py-1 rounded">C#</span>
+              <span class="text-xs bg-neutral-700 px-2 py-1 rounded">Multijoueur</span>
+            </div>
+            <div class="mt-4">
+              <button class="text-green-400 hover:text-green-300 font-medium flex items-center group/btn">
+                Voir le projet
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 transform transition-transform group-hover/btn:translate-x-1" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6">
+              <div class="relative">
+                <div class="video-trigger">
+                  <video poster="http://adrien-roussel.com/images/SaltenpepperBackground.png" class="w-full h-32 object-cover rounded-lg">
+                    <source src="http://adrien-roussel.com/videos/patreon_snp.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Visionneuse AxeoBIM -->
+        <div class="bg-neutral-800 rounded-xl overflow-hidden shadow-xl border border-neutral-700 transform transition-all duration-300 hover:scale-[1.02] hover:border-green-500 group">
+          <div class="relative">
+            <img src="http://adrien-roussel.com/images/ViewerAxeoBIMBackground.png" alt="Visionneuse AxeoBIM" class="w-full h-64 object-cover object-center">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-900 to-transparent opacity-80"></div>
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <button class="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 transform transition-transform hover:scale-110">
+                <img src="http://adrien-roussel.com/images/icons/play2.svg" alt="Play" width="100" height="100" class="w-8 h-8">
+              </button>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-center mb-4">
+              <h3 class="text-2xl font-bold group-hover:text-green-400 transition-colors">Visionneuse AxeoBIM</h3>
+              <span class="text-xs font-medium bg-green-500/20 text-green-400 py-1 px-2 rounded">Application Web</span>
+            </div>
+            <p class="text-neutral-400 mb-4">Une application web permettant de visualiser et d'interagir avec des modèles BIM en 3D.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-neutral-700 px-2 py-1 rounded">Vue.js</span>
+              <span class="text-xs bg-neutral-700 px-2 py-1 rounded">JavaScript</span>
+              <span class="text-xs bg-neutral-700 px-2 py-1 rounded">Three.js</span>
+            </div>
+            <div class="mt-4">
+              <button class="text-green-400 hover:text-green-300 font-medium flex items-center group/btn">
+                Voir le projet
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 transform transition-transform group-hover/btn:translate-x-1" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6">
+              <div class="relative">
+                <div class="video-trigger">
+                  <video poster="http://adrien-roussel.com/images/ViewerAxeoBIMBackground.png" class="w-full h-32 object-cover rounded-lg">
+                    <source src="http://adrien-roussel.com/videos/visionneuse_axeobim.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Antarctica Origins -->
+        <div class="bg-neutral-800 rounded-xl overflow-hidden shadow-xl border border-neutral-700 transform transition-all duration-300 hover:scale-[1.02] hover:border-green-500 group">
+          <div class="relative">
+            <img src="http://adrien-roussel.com/images/AntarcticaOriginsBackground.png" alt="Antarctica Origins" class="w-full h-64 object-cover object-center">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-900 to-transparent opacity-80"></div>
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <button class="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 transform transition-transform hover:scale-110">
+                <img src="http://adrien-roussel.com/images/icons/play2.svg" alt="Play" width="100" height="100" class="w-8 h-8">
+              </button>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-center mb-4">
+              <h3 class="text-2xl font-bold group-hover:text-green-400 transition-colors">Antarctica Origins</h3>
+              <span class="text-xs font-medium bg-green-500/20 text-green-400 py-1 px-2 rounded">Jeu Vidéo</span>
+            </div>
+            <p class="text-neutral-400 mb-4">Un jeu d'aventure et de survie se déroulant dans les paysages glacés de l'Antarctique.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-neutral-700 px-2 py-1 rounded">Unity</span>
+              <span class="text-xs bg-neutral-700 px-2 py-1 rounded">C#</span>
+              <span class="text-xs bg-neutral-700 px-2 py-1 rounded">Système de dialogues</span>
+            </div>
+            <div class="mt-4">
+              <button class="text-green-400 hover:text-green-300 font-medium flex items-center group/btn">
+                Voir le projet
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 transform transition-transform group-hover/btn:translate-x-1" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6">
+              <div class="relative">
+                <div class="video-trigger">
+                  <video poster="http://adrien-roussel.com/images/AntarcticaOriginsBackground.png" class="w-full h-32 object-cover rounded-lg">
+                    <source src="http://adrien-roussel.com/videos/antarctica_origins.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Features -->
+      <div class="mt-20">
+        <h3 class="text-2xl font-bold mb-8 text-center">
+          <span class="text-green-400">Fonctionnalités</span> de mes projets
+        </h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Feature 1 -->
+          <div class="bg-neutral-800 rounded-lg p-6 shadow-lg hover:shadow-green-500/20 transition-shadow border border-neutral-700 hover:border-green-500">
+            <div class="flex items-start mb-4">
+              <div class="p-2 bg-green-500/20 rounded mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h4 class="text-lg font-semibold">Systèmes de dialogue</h4>
+            </div>
+            <p class="text-neutral-400">Développement de systèmes de dialogue interactifs et de systèmes de sauvegarde utilisant Google Play Services.</p>
+          </div>
+          
+          <!-- Feature 2 -->
+          <div class="bg-neutral-800 rounded-lg p-6 shadow-lg hover:shadow-green-500/20 transition-shadow border border-neutral-700 hover:border-green-500">
+            <div class="flex items-start mb-4">
+              <div class="p-2 bg-green-500/20 rounded mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                </svg>
+              </div>
+              <h4 class="text-lg font-semibold">Systèmes de loot et d'inventaire</h4>
+            </div>
+            <p class="text-neutral-400">Création de systèmes d'objets et d'inventaire permettant de collecter et gérer les ressources dans le jeu.</p>
+          </div>
+          
+          <!-- Feature 3 -->
+          <div class="bg-neutral-800 rounded-lg p-6 shadow-lg hover:shadow-green-500/20 transition-shadow border border-neutral-700 hover:border-green-500">
+            <div class="flex items-start mb-4">
+              <div class="p-2 bg-green-500/20 rounded mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+                </svg>
+              </div>
+              <h4 class="text-lg font-semibold">Mini-jeux de crafting</h4>
+            </div>
+            <p class="text-neutral-400">Développement de mini-jeux comme le crafting de potions pour enrichir l'expérience de jeu et ajouter de la profondeur.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="mt-20 text-center">
+        <a href="#contact" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg transition-all transform hover:scale-105 group">
+          <span class="group-hover:mr-2 transition-all">Discutons de votre projet</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block ml-1 group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<div id="root">
+  <section id="experiences" class="py-20 bg-neutral-900 text-white relative overflow-hidden">
+    <!-- Background effects -->
+    <div class="absolute inset-0 z-0 opacity-10">
+      <div class="absolute top-0 left-0 w-32 h-32 bg-green-500 rounded-full filter blur-3xl"></div>
+      <div class="absolute bottom-0 right-0 w-32 h-32 bg-green-500 rounded-full filter blur-3xl"></div>
+      <div class="absolute top-1/2 right-1/4 w-24 h-24 bg-green-400 rounded-full filter blur-3xl"></div>
+    </div>
+    
+    <!-- Gaming theme elements -->
+    <div class="absolute inset-0 z-0 opacity-5 select-none pointer-events-none">
+      <div class="absolute top-10 left-10 text-lg text-green-500">XP++</div>
+      <div class="absolute top-20 right-20 text-lg text-green-500">LEVEL UP</div>
+      <div class="absolute bottom-10 left-1/4 text-lg text-green-500">SKILL++</div>
+      <div class="absolute bottom-30 right-1/3 text-lg text-green-500">ACHIEVEMENT</div>
+    </div>
+
+    <div class="container mx-auto px-6 relative z-10">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4 inline-block relative">
+          <span class="text-green-400">Exp</span>ériences
+          <div class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-green-500 to-transparent"></div>
+        </h2>
+        <p class="text-neutral-400 max-w-2xl mx-auto">Parcours professionnel et projets significatifs qui ont façonné mes compétences</p>
+      </div>
+
+      <!-- Experience Timeline -->
+      <div class="relative">
+        <!-- Timeline line -->
+        <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-neutral-800 hidden md:block"></div>
+
+        <!-- Experience Items -->
+        <div class="space-y-12">
+          <!-- Experience 1 -->
+          <div class="relative md:flex md:items-center">
+            <!-- Timeline dot for desktop -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-green-500 rounded-full z-10 hidden md:block"></div>
+            
+            <!-- Left content (date) for desktop -->
+            <div class="md:w-1/2 md:pr-12 md:text-right hidden md:block">
+              <span class="inline-block px-4 py-2 bg-green-500/20 text-green-400 rounded-lg font-mono">2021 - Présent</span>
+            </div>
+            
+            <!-- Right content (details) for desktop, full width for mobile -->
+            <div class="md:w-1/2 md:pl-12">
+              <!-- Date for mobile -->
+              <span class="inline-block px-4 py-2 bg-green-500/20 text-green-400 rounded-lg font-mono mb-4 md:hidden">2021 - Présent</span>
+              
+              <div class="bg-neutral-800 p-6 rounded-xl shadow-lg border border-neutral-700 hover:border-green-500 transition-all transform hover:-translate-y-1">
+                <h3 class="text-2xl font-bold mb-2 text-white">Développeur Unity</h3>
+                <h4 class="text-lg font-medium text-green-400 mb-4">Studio indépendant</h4>
+                <p class="text-neutral-300 mb-4">Développement de jeux vidéo indépendants avec une équipe créative, avec focus sur la conception de systèmes de gameplay et interactions.</p>
+                <div class="flex flex-wrap gap-2 mt-4">
+                  <span class="text-xs bg-neutral-700 px-2 py-1 rounded">Unity</span>
+                  <span class="text-xs bg-neutral-700 px-2 py-1 rounded">C#</span>
+                  <span class="text-xs bg-neutral-700 px-2 py-1 rounded">Game Design</span>
+                  <span class="text-xs bg-neutral-700 px-2 py-1 rounded">UI/UX</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="relative md:flex md:items-center">
+            <!-- Timeline dot for desktop -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-green-500 rounded-full z-10 hidden md:block"></div>
+            
+            <!-- Left content (details) for desktop, full width for mobile -->
+            <div class="md:w-1/2 md:pr-12 md:text-right">
+              <!-- Date for mobile -->
+              <span class="inline-block px-4 py-2 bg-green-500/20 text-green-400 rounded-lg font-mono mb-4 md:hidden">2019 - 2021</span>
+              
+              <div class="bg-neutral-800 p-6 rounded-xl shadow-lg border border-neutral-700 hover:border-green-500 transition-all transform hover:-translate-y-1">
+                <h3 class="text-2xl font-bold mb-2 text-white">Développeur Web Frontend</h3>
+                <h4 class="text-lg font-medium text-green-400 mb-4">AxeoBIM</h4>
+                <p class="text-neutral-300 mb-4">Développement d'une visionneuse 3D interactive pour modèles BIM, avec intégration d'API et optimisation des performances.</p>
+                <div class="flex flex-wrap gap-2 mt-4 md:justify-end">
+                  <span class="text-xs bg-neutral-700 px-2 py-1 rounded">Vue.js</span>
+                  <span class="text-xs bg-neutral-700 px-2 py-1 rounded">JavaScript</span>
+                  <span class="text-xs bg-neutral-700 px-2 py-1 rounded">Three.js</span>
+                  <span class="text-xs bg-neutral-700 px-2 py-1 rounded">CSS</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right content (date) for desktop -->
+            <div class="md:w-1/2 md:pl-12 hidden md:block">
+              <span class="inline-block px-4 py-2 bg-green-500/20 text-green-400 rounded-lg font-mono">2019 - 2021</span>
+            </div>
+          </div>
+
+          <!-- Experience 3 -->
+          <div class="relative md:flex md:items-center">
+            <!-- Timeline dot for desktop -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-green-500 rounded-full z-10 hidden md:block"></div>
+            
+            <!-- Left content (date) for desktop -->
+            <div class="md:w-1/2 md:pr-12 md:text-right hidden md:block">
+              <span class="inline-block px-4 py-2 bg-green-500/20 text-green-400 rounded-lg font-mono">2018 - 2019</span>
+            </div>
+            
+            <!-- Right content (details) for desktop, full width for mobile -->
+            <div class="md:w-1/2 md:pl-12">
+              <!-- Date for mobile -->
+              <span class="inline-block px-4 py-2 bg-green-500/20 text-green-400 rounded-lg font-mono mb-4 md:hidden">2018 - 2019</span>
+              
+              <div class="bg-neutral-800 p-6 rounded-xl shadow-lg border border-neutral-700 hover:border-green-500 transition-all transform hover:-translate-y-1">
+                <h3 class="text-2xl font-bold mb-2 text-white">Développeur Stagiaire</h3>
+                <h4 class="text-lg font-medium text-green-400 mb-4">Agence Web</h4>
+                <p class="text-neutral-300 mb-4">Stage de développement web avec focus sur les technologies frontend et backend. Contribution à plusieurs projets clients.</p>
+                <div class="flex flex-wrap gap-2 mt-4">
+                  <span class="text-xs bg-neutral-700 px-2 py-1 rounded">HTML/CSS</span>
+                  <span class="text-xs bg-neutral-700 px-2 py-1 rounded">JavaScript</span>
+                  <span class="text-xs bg-neutral-700 px-2 py-1 rounded">PHP</span>
+                  <span class="text-xs bg-neutral-700 px-2 py-1 rounded">MySQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="mt-24">
+        <h3 class="text-2xl font-bold mb-10 text-center">
+          <span class="text-green-400">Form</span>ation
+        </h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Education 1 -->
+          <div class="bg-neutral-800 p-6 rounded-xl shadow-lg border border-neutral-700 hover:border-green-500 transition-all transform hover:-translate-y-1 flex flex-col h-full">
+            <div class="flex items-center mb-6">
+              <div class="p-3 bg-green-500/20 rounded-full mr-4">
+                <img src="http://adrien-roussel.com/images/icons/book.svg" alt="Book" width="32" height="32" class="w-6 h-6"/>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold">Master en Développement de Jeux Vidéo</h4>
+                <p class="text-green-400">École Supérieure du Jeu Vidéo</p>
+              </div>
+            </div>
+            <p class="text-neutral-400 mb-4 flex-grow">Formation spécialisée dans le développement de jeux vidéo, avec focus sur Unity, C# et le game design. Projets pratiques en équipe.</p>
+            <div class="flex justify-between items-center mt-auto">
+              <span class="text-sm text-neutral-500">2016 - 2018</span>
+              <div class="flex space-x-1">
+                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education 2 -->
+          <div class="bg-neutral-800 p-6 rounded-xl shadow-lg border border-neutral-700 hover:border-green-500 transition-all transform hover:-translate-y-1 flex flex-col h-full">
+            <div class="flex items-center mb-6">
+              <div class="p-3 bg-green-500/20 rounded-full mr-4">
+                <img src="http://adrien-roussel.com/images/icons/code-icon.svg" alt="Code" width="24" height="25" class="w-6 h-6"/>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold">Licence en Informatique</h4>
+                <p class="text-green-400">Université de Technologie</p>
+              </div>
+            </div>
+            <p class="text-neutral-400 mb-4 flex-grow">Formation généraliste en informatique couvrant les fondamentaux de la programmation, les bases de données, le développement web et les mathématiques appliquées.</p>
+            <div class="flex justify-between items-center mt-auto">
+              <span class="text-sm text-neutral-500">2013 - 2016</span>
+              <div class="flex space-x-1">
+                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-neutral-600 rounded-full"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonials -->
+      <div class="mt-24">
+        <h3 class="text-2xl font-bold mb-10 text-center">
+          <span class="text-green-400">Témoig</span>nages
+        </h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="bg-neutral-800 p-6 rounded-xl shadow-lg border border-neutral-700 hover:border-green-500 transition-all">
+            <div class="flex flex-col h-full">
+              <div class="mb-6">
+                <svg class="w-8 h-8 text-green-500 mb-2" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+                <p class="text-neutral-300 italic">Adrien est un développeur talentueux et passionné. Sa capacité à résoudre des problèmes complexes et son souci du détail en font un atout majeur dans notre équipe. Il a complètement transformé notre projet avec ses idées innovantes.</p>
+              </div>
+              <div class="mt-auto flex items-center">
+                <img src="http://adrien-roussel.com/images/pp-gautier.png" alt="Gautier" width="80" height="80" class="w-12 h-12 rounded-full mr-4 object-cover"/>
+                <div>
+                  <h4 class="font-bold">Gautier Lambert</h4>
+                  <p class="text-sm text-green-400">Chef de Projet, Studio Indie</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-neutral-800 p-6 rounded-xl shadow-lg border border-neutral-700 hover:border-green-500 transition-all">
+            <div class="flex flex-col h-full">
+              <div class="mb-6">
+                <svg class="w-8 h-8 text-green-500 mb-2" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+                <p class="text-neutral-300 italic">Travailler avec Adrien a été une expérience exceptionnelle. Sa maîtrise technique et sa créativité ont permis de surmonter des défis majeurs dans le développement de notre application web. Je le recommande vivement.</p>
+              </div>
+              <div class="mt-auto flex items-center">
+                <img src="http://adrien-roussel.com/images/pp-alexandre.png" alt="Alexandre" width="80" height="80" class="w-12 h-12 rounded-full mr-4 object-cover"/>
+                <div>
+                  <h4 class="font-bold">Alexandre Durand</h4>
+                  <p class="text-sm text-green-400">Lead Developer, AxeoBIM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="mt-20 text-center">
+        <a href="#contact" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg transition-all transform hover:scale-105 group">
+          <span class="group-hover:mr-2 transition-all">Contactez-moi</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block ml-1 group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<div id="root">
+  <section id="formations" class="py-20 bg-neutral-900 text-white relative overflow-hidden">
+    <!-- Background effects -->
+    <div class="absolute inset-0 z-0 opacity-10">
+      <div class="absolute top-0 left-0 w-32 h-32 bg-green-500 rounded-full filter blur-3xl"></div>
+      <div class="absolute bottom-0 right-0 w-32 h-32 bg-green-500 rounded-full filter blur-3xl"></div>
+      <div class="absolute top-1/2 right-1/4 w-24 h-24 bg-green-400 rounded-full filter blur-3xl"></div>
+    </div>
+    
+    <!-- Gaming theme elements -->
+    <div class="absolute inset-0 z-0 opacity-5 select-none pointer-events-none">
+      <div class="absolute top-10 left-10 text-lg text-green-500">LEVEL UP</div>
+      <div class="absolute top-20 right-20 text-lg text-green-500">SKILL TREE</div>
+      <div class="absolute bottom-10 left-1/4 text-lg text-green-500">KNOWLEDGE++</div>
+      <div class="absolute bottom-30 right-1/3 text-lg text-green-500">LEARN</div>
+    </div>
+
+    <div class="container mx-auto px-6 relative z-10">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4 inline-block relative">
+          <span class="text-green-400">Form</span>ations
+          <div class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-green-500 to-transparent"></div>
+        </h2>
+        <p class="text-neutral-400 max-w-2xl mx-auto">Mon parcours académique et mes formations professionnelles</p>
+      </div>
+
+      <!-- Main Education Timeline -->
+      <div class="relative max-w-4xl mx-auto">
+        <!-- Timeline line -->
+        <div class="absolute left-6 top-0 h-full w-1 bg-neutral-800 md:left-1/2 md:transform md:-translate-x-1/2"></div>
+
+        <!-- Timeline Items -->
+        <div class="space-y-12">
+          <!-- Education 1 -->
+          <div class="relative md:grid md:grid-cols-2 md:gap-8 items-start">
+            <div class="hidden md:block md:col-start-2"></div>
+            
+            <!-- Timeline marker -->
+            <div class="absolute left-6 top-5 w-6 h-6 bg-green-500 rounded-full z-10 transform -translate-x-1/2 border-4 border-neutral-900 md:left-1/2">
+              <div class="absolute w-full h-full bg-green-400 rounded-full animate-ping opacity-30"></div>
+            </div>
+            
+            <!-- Content -->
+            <div class="ml-12 md:ml-0 md:col-start-1 md:text-right md:pr-8">
+              <div class="bg-neutral-800 p-6 rounded-xl shadow-lg border border-neutral-700 hover:border-green-500 transition-all transform hover:-translate-y-1 inline-block w-full">
+                <span class="inline-block px-3 py-1 bg-green-500/20 text-green-400 rounded font-mono text-sm mb-3">2018 - 2021</span>
+                <h3 class="text-xl font-bold mb-2 text-white">Master en Développement de Jeux Vidéo</h3>
+                <h4 class="text-lg font-medium text-green-400 mb-3">École Supérieure du Jeu Vidéo</h4>
+                <p class="text-neutral-300 mb-4">Formation approfondie aux technologies et méthodes de développement de jeux vidéo, avec spécialisation en programmation et game design.</p>
+                <ul class="space-y-2">
+                  <li class="flex items-center">
+                    <div class="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+                    <span class="text-neutral-400">Programmation C# et Unity</span>
+                  </li>
+                  <li class="flex items-center">
+                    <div class="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+                    <span class="text-neutral-400">Game Design et Level Design</span>
+                  </li>
+                  <li class="flex items-center">
+                    <div class="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+                    <span class="text-neutral-400">Gestion de projet en équipe</span>
+                  </li>
+                </ul>
+                <div class="mt-4 flex items-center md:justify-end">
+                  <div class="p-2 bg-green-500/20 rounded-full">
+                    <img src="http://adrien-roussel.com/images/icons/unity.svg" alt="Unity" width="42" height="43" class="w-6 h-6" />
+                  </div>
+                  <div class="p-2 bg-green-500/20 rounded-full ml-2">
+                    <img src="http://adrien-roussel.com/images/icons/file-c-sharp.svg" alt="C#" width="42" height="47" class="w-6 h-6" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education 2 -->
+          <div class="relative md:grid md:grid-cols-2 md:gap-8 items-start">
+            <!-- Timeline marker -->
+            <div class="absolute left-6 top-5 w-6 h-6 bg-green-500 rounded-full z-10 transform -translate-x-1/2 border-4 border-neutral-900 md:left-1/2">
+              <div class="absolute w-full h-full bg-green-400 rounded-full animate-ping opacity-30"></div>
+            </div>
+            
+            <!-- Content -->
+            <div class="ml-12 md:ml-0 md:col-start-2 md:pl-8">
+              <div class="bg-neutral-800 p-6 rounded-xl shadow-lg border border-neutral-700 hover:border-green-500 transition-all transform hover:-translate-y-1 inline-block w-full">
+                <span class="inline-block px-3 py-1 bg-green-500/20 text-green-400 rounded font-mono text-sm mb-3">2015 - 2018</span>
+                <h3 class="text-xl font-bold mb-2 text-white">Licence en Informatique</h3>
+                <h4 class="text-lg font-medium text-green-400 mb-3">Université de Technologie</h4>
+                <p class="text-neutral-300 mb-4">Formation fondamentale en sciences informatiques couvrant algorithmique, programmation, bases de données et développement web.</p>
+                <ul class="space-y-2">
+                  <li class="flex items-center">
+                    <div class="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+                    <span class="text-neutral-400">Algorithmique et structures de données</span>
+                  </li>
+                  <li class="flex items-center">
+                    <div class="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+                    <span class="text-neutral-400">Développement web (HTML, CSS, JS)</span>
+                  </li>
+                  <li class="flex items-center">
+                    <div class="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+                    <span class="text-neutral-400">Bases de données et SQL</span>
+                  </li>
+                </ul>
+                <div class="mt-4 flex items-center">
+                  <div class="p-2 bg-green-500/20 rounded-full">
+                    <img src="http://adrien-roussel.com/images/icons/file-html.svg" alt="HTML" width="42" height="48" class="w-6 h-6" />
+                  </div>
+                  <div class="p-2 bg-green-500/20 rounded-full ml-2">
+                    <img src="http://adrien-roussel.com/images/icons/file-js.svg" alt="JavaScript" width="42" height="42" class="w-6 h-6" />
+                  </div>
+                  <div class="p-2 bg-green-500/20 rounded-full ml-2">
+                    <img src="http://adrien-roussel.com/images/icons/php.svg" alt="PHP" width="42" height="42" class="w-6 h-6" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education 3 -->
+          <div class="relative md:grid md:grid-cols-2 md:gap-8 items-start">
+            <div class="hidden md:block md:col-start-2"></div>
+            
+            <!-- Timeline marker -->
+            <div class="absolute left-6 top-5 w-6 h-6 bg-green-500 rounded-full z-10 transform -translate-x-1/2 border-4 border-neutral-900 md:left-1/2">
+              <div class="absolute w-full h-full bg-green-400 rounded-full animate-ping opacity-30"></div>
+            </div>
+            
+            <!-- Content -->
+            <div class="ml-12 md:ml-0 md:col-start-1 md:text-right md:pr-8">
+              <div class="bg-neutral-800 p-6 rounded-xl shadow-lg border border-neutral-700 hover:border-green-500 transition-all transform hover:-translate-y-1 inline-block w-full">
+                <span class="inline-block px-3 py-1 bg-green-500/20 text-green-400 rounded font-mono text-sm mb-3">2013 - 2015</span>
+                <h3 class="text-xl font-bold mb-2 text-white">DUT Informatique</h3>
+                <h4 class="text-lg font-medium text-green-400 mb-3">Institut Universitaire de Technologie</h4>
+                <p class="text-neutral-300 mb-4">Formation technique en informatique avec un accent sur les aspects pratiques et professionnels du développement logiciel.</p>
+                <ul class="space-y-2">
+                  <li class="flex items-center md:justify-end">
+                    <span class="text-neutral-400 md:mr-2">Programmation C++ et Java</span>
+                    <div class="w-2 h-2 bg-green-500 rounded-full ml-2 md:ml-0"></div>
+                  </li>
+                  <li class="flex items-center md:justify-end">
+                    <span class="text-neutral-400 md:mr-2">Réseaux et systèmes d'exploitation</span>
+                    <div class="w-2 h-2 bg-green-500 rounded-full ml-2 md:ml-0"></div>
+                  </li>
+                  <li class="flex items-center md:justify-end">
+                    <span class="text-neutral-400 md:mr-2">Administration de bases de données</span>
+                    <div class="w-2 h-2 bg-green-500 rounded-full ml-2 md:ml-0"></div>
+                  </li>
+                </ul>
+                <div class="mt-4 flex items-center md:justify-end">
+                  <div class="p-2 bg-green-500/20 rounded-full">
+                    <img src="http://adrien-roussel.com/images/icons/file-cpp.svg" alt="C++" width="42" height="42" class="w-6 h-6" />
+                  </div>
+                  <div class="p-2 bg-green-500/20 rounded-full ml-2">
+                    <img src="http://adrien-roussel.com/images/icons/phpmyadmin.svg" alt="Database" width="42" height="42" class="w-6 h-6" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Certifications -->
+      <div class="mt-20">
+        <h3 class="text-2xl font-bold mb-8 text-center">
+          <span class="text-green-400">Certif</span>ications
+        </h3>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Certification 1 -->
+          <div class="bg-neutral-800 p-6 rounded-xl shadow-lg border border-neutral-700 hover:border-green-500 transition-all transform hover:-translate-y-1">
+            <div class="h-14 w-14 bg-green-500/20 rounded-lg flex items-center justify-center mb-4">
+              <img src="http://adrien-roussel.com/images/icons/unity.svg" alt="Unity" width="42" height="43" class="w-8 h-8" />
+            </div>
+            <h4 class="text-xl font-bold mb-2">Unity Certified Developer</h4>
+            <p class="text-neutral-400 mb-3">Certification officielle attestant de compétences avancées en développement Unity.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-green-400">2020</span>
+              <span class="px-2 py-1 bg-green-500/20 text-green-400 rounded text-xs">Advanced</span>
+            </div>
+          </div>
+          
+          <!-- Certification 2 -->
+          <div class="bg-neutral-800 p-6 rounded-xl shadow-lg border border-neutral-700 hover:border-green-500 transition-all transform hover:-translate-y-1">
+            <div class="h-14 w-14 bg-green-500/20 rounded-lg flex items-center justify-center mb-4">
+              <img src="http://adrien-roussel.com/images/icons/file-vue.svg" alt="Vue" width="42" height="42" class="w-8 h-8" />
+            </div>
+            <h4 class="text-xl font-bold mb-2">Vue.js Advanced</h4>
+            <p class="text-neutral-400 mb-3">Formation complète sur le framework Vue.js et ses écosystèmes.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-green-400">2019</span>
+              <span class="px-2 py-1 bg-green-500/20 text-green-400 rounded text-xs">Frontend</span>
+            </div>
+          </div>
+          
+          <!-- Certification 3 -->
+          <div class="bg-neutral-800 p-6 rounded-xl shadow-lg border border-neutral-700 hover:border-green-500 transition-all transform hover:-translate-y-1">
+            <div class="h-14 w-14 bg-green-500/20 rounded-lg flex items-center justify-center mb-4">
+              <img src="http://adrien-roussel.com/images/icons/code-icon.svg" alt="Code" width="24" height="25" class="w-8 h-8" />
+            </div>
+            <h4 class="text-xl font-bold mb-2">Algorithmes & Structures de Données</h4>
+            <p class="text-neutral-400 mb-3">Certification avancée en conception algorithmique et optimisation.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-green-400">2018</span>
+              <span class="px-2 py-1 bg-green-500/20 text-green-400 rounded text-xs">Computer Science</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills Progression -->
+      <div class="mt-20">
+        <h3 class="text-2xl font-bold mb-8 text-center">
+          <span class="text-green-400">Progress</span>ion des Compétences
+        </h3>
+        
+        <div class="max-w-3xl mx-auto">
+          <!-- Game development progress bar -->
+          <div class="mb-8">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-medium">Développement de jeux</span>
+              <span class="text-green-400">95%</span>
+            </div>
+            <div class="w-full h-4 bg-neutral-800 rounded-full overflow-hidden relative">
+              <div class="bg-gradient-to-r from-green-600 to-green-400 h-full rounded-full" style="width: 95%">
+                <div class="animate-pulse absolute inset-0 bg-gradient-to-r from-transparent to-green-300/20"></div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Web development progress bar -->
+          <div class="mb-8">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-medium">Développement web</span>
+              <span class="text-green-400">85%</span>
+            </div>
+            <div class="w-full h-4 bg-neutral-800 rounded-full overflow-hidden relative">
+              <div class="bg-gradient-to-r from-green-600 to-green-400 h-full rounded-full" style="width: 85%">
+                <div class="animate-pulse absolute inset-0 bg-gradient-to-r from-transparent to-green-300/20"></div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Game design progress bar -->
+          <div class="mb-8">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-medium">Game design</span>
+              <span class="text-green-400">90%</span>
+            </div>
+            <div class="w-full h-4 bg-neutral-800 rounded-full overflow-hidden relative">
+              <div class="bg-gradient-to-r from-green-600 to-green-400 h-full rounded-full" style="width: 90%">
+                <div class="animate-pulse absolute inset-0 bg-gradient-to-r from-transparent to-green-300/20"></div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project management progress bar -->
+          <div class="mb-8">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-medium">Gestion de projet</span>
+              <span class="text-green-400">80%</span>
+            </div>
+            <div class="w-full h-4 bg-neutral-800 rounded-full overflow-hidden relative">
+              <div class="bg-gradient-to-r from-green-600 to-green-400 h-full rounded-full" style="width: 80%">
+                <div class="animate-pulse absolute inset-0 bg-gradient-to-r from-transparent to-green-300/20"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Activities -->
+      <div class="mt-20">
+        <h3 class="text-2xl font-bold mb-8 text-center">
+          <span class="text-green-400">Act</span>ivités Complémentaires
+        </h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Activity 1 -->
+          <div class="bg-neutral-800 p-6 rounded-xl shadow-lg border border-neutral-700 hover:border-green-500 transition-all">
+            <div class="flex items-center mb-4">
+              <div class="p-3 bg-green-500/20 rounded-lg mr-4">
+                <img src="http://adrien-roussel.com/images/icons/microphone-icon.svg" alt="Microphone" width="24" height="25" class="w-6 h-6" />
+              </div>
+              <h4 class="text-xl font-bold">Conférences & Workshops</h4>
+            </div>
+            <p class="text-neutral-400 mb-4">Participation régulière à des conférences sur le développement de jeux et l'animation d'ateliers d'initiation à Unity.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-green-400">2019 - Présent</span>
+            </div>
+          </div>
+          
+          <!-- Activity 2 -->
+          <div class="bg-neutral-800 p-6 rounded-xl shadow-lg border border-neutral-700 hover:border-green-500 transition-all">
+            <div class="flex items-center mb-4">
+              <div class="p-3 bg-green-500/20 rounded-lg mr-4">
+                <img src="http://adrien-roussel.com/images/icons/guitar.svg" alt="Guitar" width="32" height="32" class="w-6 h-6" />
+              </div>
+              <h4 class="text-xl font-bold">Game Jams</h4>
+            </div>
+            <p class="text-neutral-400 mb-4">Participation à plusieurs Game Jams, dont la Global Game Jam, avec création de jeux en temps limité en équipe.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-green-400">2017 - Présent</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="mt-20 text-center">
+        <a href="#contact" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg transition-all transform hover:scale-105 group">
+          <span class="group-hover:mr-2 transition-all">Me contacter</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block ml-1 group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<div id="root">
+  <section id="temoignages" class="py-20 bg-neutral-900 text-white relative overflow-hidden">
+    <!-- Background effects -->
+    <div class="absolute inset-0 z-0 opacity-10">
+      <div class="absolute top-0 left-0 w-32 h-32 bg-green-500 rounded-full filter blur-3xl"></div>
+      <div class="absolute bottom-0 right-0 w-32 h-32 bg-green-500 rounded-full filter blur-3xl"></div>
+      <div class="absolute top-1/2 right-1/4 w-24 h-24 bg-green-400 rounded-full filter blur-3xl"></div>
+    </div>
+    
+    <!-- Gaming theme elements -->
+    <div class="absolute inset-0 z-0 opacity-5 select-none pointer-events-none">
+      <div class="absolute top-10 left-10 text-lg text-green-500">⭐⭐⭐⭐⭐</div>
+      <div class="absolute top-20 right-20 text-lg text-green-500">PARTY MEMBERS</div>
+      <div class="absolute bottom-10 left-1/4 text-lg text-green-500">GUILD</div>
+      <div class="absolute bottom-30 right-1/3 text-lg text-green-500">ALLIES</div>
+    </div>
+
+    <div class="container mx-auto px-6 relative z-10">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4 inline-block relative">
+          <span class="text-green-400">Témoig</span>nages
+          <div class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-green-500 to-transparent"></div>
+        </h2>
+        <p class="text-neutral-400 max-w-2xl mx-auto">Ce que mes collaborateurs et clients disent de mon travail</p>
+      </div>
+
+      <!-- Main Testimonials -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <!-- Testimonial 1 -->
+        <div class="bg-neutral-800 rounded-xl p-8 shadow-lg border border-neutral-700 hover:border-green-500 transition-all transform hover:-translate-y-2 flex flex-col h-full relative overflow-hidden group">
+          <!-- Quote icon -->
+          <svg class="absolute top-4 right-4 w-16 h-16 text-green-500/10 group-hover:text-green-500/20 transition-colors" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+          </svg>
+          
+          <div class="mb-8 flex-grow">
+            <div class="flex mb-4">
+              <div class="text-green-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+              <div class="text-green-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+              <div class="text-green-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+              <div class="text-green-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+              <div class="text-green-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+            </div>
+            <p class="text-neutral-300 italic">"Adrien est un développeur talentueux et passionné. Sa capacité à résoudre des problèmes complexes et son souci du détail en font un atout majeur dans notre équipe. Il a complètement transformé notre projet avec ses idées innovantes."</p>
+          </div>
+          
+          <div class="pt-4 mt-auto border-t border-neutral-700">
+            <div class="flex items-center">
+              <img src="http://adrien-roussel.com/images/pp-gautier.png" alt="Gautier Lambert" width="80" height="80" class="w-12 h-12 rounded-full object-cover border-2 border-green-500"/>
+              <div class="ml-4">
+                <h4 class="font-bold text-green-400">Gautier Lambert</h4>
+                <p class="text-sm text-neutral-400">Chef de Projet, Studio Indie</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Testimonial 2 -->
+        <div class="bg-neutral-800 rounded-xl p-8 shadow-lg border border-neutral-700 hover:border-green-500 transition-all transform hover:-translate-y-2 flex flex-col h-full relative overflow-hidden group">
+          <!-- Quote icon -->
+          <svg class="absolute top-4 right-4 w-16 h-16 text-green-500/10 group-hover:text-green-500/20 transition-colors" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+          </svg>
+          
+          <div class="mb-8 flex-grow">
+            <div class="flex mb-4">
+              <div class="text-green-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+              <div class="text-green-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+              <div class="text-green-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+              <div class="text-green-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+              <div class="text-green-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+            </div>
+            <p class="text-neutral-300 italic">"Travailler avec Adrien a été une expérience exceptionnelle. Sa maîtrise technique et sa créativité ont permis de surmonter des défis majeurs dans le développement de notre application web. Je le recommande vivement."</p>
+          </div>
+          
+          <div class="pt-4 mt-auto border-t border-neutral-700">
+            <div class="flex items-center">
+              <img src="http://adrien-roussel.com/images/pp-alexandre.png" alt="Alexandre Durand" width="80" height="80" class="w-12 h-12 rounded-full object-cover border-2 border-green-500"/>
+              <div class="ml-4">
+                <h4 class="font-bold text-green-400">Alexandre Durand</h4>
+                <p class="text-sm text-neutral-400">Lead Developer, AxeoBIM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Testimonial 3 -->
+        <div class="bg-neutral-800 rounded-xl p-8 shadow-lg border border-neutral-700 hover:border-green-500 transition-all transform hover:-translate-y-2 flex flex-col h-full relative overflow-hidden group">
+          <!-- Quote icon -->
+          <svg class="absolute top-4 right-4 w-16 h-16 text-green-500/10 group-hover:text-green-500/20 transition-colors" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+          </svg>
+          
+          <div class="mb-8 flex-grow">
+            <div class="flex mb-4">
+              <div class="text-green-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+              <div class="text-green-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+              <div class="text-green-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+              <div class="text-green-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+              <div class="text-green-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+            </div>
+            <p class="text-neutral-300 italic">"J'ai eu la chance de collaborer avec Adrien sur plusieurs projets de jeu. Sa compréhension profonde des mécaniques de gameplay et sa capacité à implémenter des solutions techniques complexes font de lui un développeur exceptionnel."</p>
+          </div>
+          
+          <div class="pt-4 mt-auto border-t border-neutral-700">
+            <div class="flex items-center">
+              <img src="http://adrien-roussel.com/images/pp-alex.jpg" alt="Alex Moreau" width="80" height="80" class="w-12 h-12 rounded-full object-cover border-2 border-green-500"/>
+              <div class="ml-4">
+                <h4 class="font-bold text-green-400">Alex Moreau</h4>
+                <p class="text-sm text-neutral-400">Game Designer, Studio Indie</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial Showcase - Featured -->
+      <div class="bg-neutral-800/50 rounded-xl p-8 md:p-12 shadow-lg border border-neutral-700 mb-16 relative overflow-hidden group hover:border-green-500 transition-all">
+        <!-- Background pattern -->
+        <div class="absolute inset-0 opacity-5 z-0">
+          <div class="absolute -right-12 -top-12 w-64 h-64 bg-green-500 rounded-full filter blur-3xl"></div>
+          <div class="absolute -left-12 -bottom-12 w-64 h-64 bg-green-500 rounded-full filter blur-3xl"></div>
+        </div>
+        
+        <!-- Quote marks -->
+        <div class="absolute top-6 left-8 text-6xl text-green-500 opacity-20">"</div>
+        <div class="absolute bottom-6 right-8 text-6xl text-green-500 opacity-20">"</div>
+        
+        <div class="relative z-10">
+          <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/4 mb-6 md:mb-0 flex flex-col items-center">
+              <img src="http://adrien-roussel.com/images/pp-xavier.jpg" alt="Xavier Dupont" width="80" height="80" class="w-24 h-24 rounded-full object-cover border-4 border-green-500 shadow-lg mb-4"/>
+              <h4 class="font-bold text-xl text-green-400 text-center">Xavier Dupont</h4>
+              <p class="text-neutral-400 text-center">Directeur Technique, AxeoBIM</p>
+            </div>
+            
+            <div class="md:w-3/4 md:pl-12">
+              <div class="flex mb-6">
+                <div class="text-green-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                </div>
+                <div class="text-green-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                </div>
+                <div class="text-green-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                </div>
+                <div class="text-green-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                </div>
+                <div class="text-green-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                </div>
+              </div>
+              
+              <p class="text-neutral-300 italic text-lg leading-relaxed mb-6">"Adrien a joué un rôle crucial dans le développement de notre visionneuse 3D. Ses compétences techniques, particulièrement en JavaScript et en visualisation 3D, ont permis à notre produit de se démarquer sur le marché. Sa capacité à comprendre rapidement des concepts complexes et à trouver des solutions innovantes fait de lui un développeur exceptionnel. Il a également fait preuve d'un excellent esprit d'équipe, collaborant efficacement avec les designers et les autres développeurs."</p>
+              
+              <div class="flex space-x-2">
+                <span class="px-3 py-1 bg-neutral-700/50 text-green-400 rounded-full text-sm">Interface 3D</span>
+                <span class="px-3 py-1 bg-neutral-700/50 text-green-400 rounded-full text-sm">Vue.js</span>
+                <span class="px-3 py-1 bg-neutral-700/50 text-green-400 rounded-full text-sm">Optimisation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+        <div class="bg-neutral-800 rounded-xl p-6 text-center border border-neutral-700 hover:border-green-500 transition-all transform hover:-translate-y-1">
+          <div class="text-3xl md:text-4xl font-bold text-green-400 mb-2">100%</div>
+          <p class="text-neutral-400">Satisfaction client</p>
+        </div>
+        
+        <div class="bg-neutral-800 rounded-xl p-6 text-center border border-neutral-700 hover:border-green-500 transition-all transform hover:-translate-y-1">
+          <div class="text-3xl md:text-4xl font-bold text-green-400 mb-2">12+</div>
+          <p class="text-neutral-400">Projets complétés</p>
+        </div>
+        
+        <div class="bg-neutral-800 rounded-xl p-6 text-center border border-neutral-700 hover:border-green-500 transition-all transform hover:-translate-y-1">
+          <div class="text-3xl md:text-4xl font-bold text-green-400 mb-2">5+</div>
+          <p class="text-neutral-400">Années d'expérience</p>
+        </div>
+        
+        <div class="bg-neutral-800 rounded-xl p-6 text-center border border-neutral-700 hover:border-green-500 transition-all transform hover:-translate-y-1">
+          <div class="text-3xl md:text-4xl font-bold text-green-400 mb-2">8+</div>
+          <p class="text-neutral-400">Technologies maîtrisées</p>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="text-center">
+        <a href="#contact" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg transition-all transform hover:scale-105 group">
+          <span class="group-hover:mr-2 transition-all">Discutons de votre projet</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block ml-1 group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<div id="root">
+  <section id="contact" class="py-20 bg-neutral-900 text-white relative overflow-hidden">
+    <!-- Background effects -->
+    <div class="absolute inset-0 z-0 opacity-10">
+      <div class="absolute top-0 left-0 w-32 h-32 bg-green-500 rounded-full filter blur-3xl"></div>
+      <div class="absolute bottom-0 right-0 w-32 h-32 bg-green-500 rounded-full filter blur-3xl"></div>
+      <div class="absolute top-1/2 right-1/4 w-24 h-24 bg-green-400 rounded-full filter blur-3xl"></div>
+    </div>
+    
+    <!-- Gaming theme elements -->
+    <div class="absolute inset-0 z-0 opacity-5 select-none pointer-events-none">
+      <div class="absolute top-10 left-10 text-lg text-green-500">CONNECT</div>
+      <div class="absolute top-20 right-20 text-lg text-green-500">PARTY UP</div>
+      <div class="absolute bottom-10 left-1/4 text-lg text-green-500">JOIN GUILD</div>
+      <div class="absolute bottom-30 right-1/3 text-lg text-green-500">QUEST ACCEPTED</div>
+    </div>
+
+    <div class="container mx-auto px-6 relative z-10">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4 inline-block relative">
+          <span class="text-green-400">Cont</span>act
+          <div class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-green-500 to-transparent"></div>
+        </h2>
+        <p class="text-neutral-400 max-w-2xl mx-auto">Envie de discuter d'un projet ou de collaborer ? N'hésitez pas à me contacter !</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <!-- Contact Info -->
+        <div>
+          <div class="bg-neutral-800 rounded-xl p-8 shadow-lg border border-neutral-700 hover:border-green-500 transition-all mb-8">
+            <h3 class="text-2xl font-bold mb-6 text-green-400">Restons en contact</h3>
+            
+            <div class="space-y-6">
+              <!-- Email -->
+              <div class="flex items-start">
+                <div class="bg-green-500/20 p-3 rounded-lg mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-white">Email</h4>
+                  <a href="mailto:contact@adrien-roussel.com" class="text-neutral-400 hover:text-green-400 transition-colors">contact@adrien-roussel.com</a>
+                </div>
+              </div>
+              
+              <!-- LinkedIn -->
+              <div class="flex items-start">
+                <div class="bg-green-500/20 p-3 rounded-lg mr-4">
+                  <img src="http://adrien-roussel.com/images/icons/linkedin-logo.svg" alt="LinkedIn" width="30" height="32" class="w-6 h-6" />
+                </div>
+                <div>
+                  <h4 class="font-semibold text-white">LinkedIn</h4>
+                  <a href="https://linkedin.com/in/adrien-roussel" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-green-400 transition-colors">linkedin.com/in/adrien-roussel</a>
+                </div>
+              </div>
+              
+              <!-- Location -->
+              <div class="flex items-start">
+                <div class="bg-green-500/20 p-3 rounded-lg mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-white">Localisation</h4>
+                  <p class="text-neutral-400">France</p>
+                </div>
+              </div>
+              
+              <!-- Availability -->
+              <div class="flex items-start">
+                <div class="bg-green-500/20 p-3 rounded-lg mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-white">Disponibilité</h4>
+                  <p class="text-neutral-400">Ouvert aux opportunités de freelance et collaboration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Social Links -->
+          <div class="bg-neutral-800 rounded-xl p-8 shadow-lg border border-neutral-700 hover:border-green-500 transition-all">
+            <h3 class="text-2xl font-bold mb-6 text-green-400">Réseaux sociaux</h3>
+            
+            <div class="grid grid-cols-2 gap-4">
+              <!-- LinkedIn -->
+              <a href="https://linkedin.com/in/adrien-roussel" target="_blank" rel="noopener noreferrer" 
+                class="flex items-center p-4 bg-neutral-700/50 rounded-lg hover:bg-green-500/20 transition-all group">
+                <img src="http://adrien-roussel.com/images/icons/linkedin-logo.svg" alt="LinkedIn" width="30" height="32" class="w-6 h-6 mr-3" />
+                <span class="font-medium group-hover:text-green-400 transition-colors">LinkedIn</span>
+              </a>
+              
+              <!-- GitHub -->
+              <a href="#" target="_blank" rel="noopener noreferrer" 
+                class="flex items-center p-4 bg-neutral-700/50 rounded-lg hover:bg-green-500/20 transition-all group">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                <span class="font-medium group-hover:text-green-400 transition-colors">GitHub</span>
+              </a>
+              
+              <!-- Twitter/X -->
+              <a href="#" target="_blank" rel="noopener noreferrer" 
+                class="flex items-center p-4 bg-neutral-700/50 rounded-lg hover:bg-green-500/20 transition-all group">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                </svg>
+                <span class="font-medium group-hover:text-green-400 transition-colors">Twitter</span>
+              </a>
+              
+              <!-- Behance -->
+              <a href="#" target="_blank" rel="noopener noreferrer" 
+                class="flex items-center p-4 bg-neutral-700/50 rounded-lg hover:bg-green-500/20 transition-all group">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14h-8.027c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988h-6.466v-14.967h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zm-3.466-8.988h3.584c2.508 0 2.906-3-.312-3h-3.272v3zm3.391 3h-3.391v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"/>
+                </svg>
+                <span class="font-medium group-hover:text-green-400 transition-colors">Behance</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="bg-neutral-800 rounded-xl p-8 shadow-lg border border-neutral-700 hover:border-green-500 transition-all">
+          <h3 class="text-2xl font-bold mb-6 text-green-400">Envoyez-moi un message</h3>
+          
+          <form class="space-y-6">
+            <!-- Name -->
+            <div>
+              <label for="name" class="block text-sm font-medium text-neutral-400 mb-1">Nom</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                placeholder="Votre nom complet" 
+                class="w-full px-4 py-3 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors text-white placeholder-neutral-500"
+                required
+              />
+            </div>
+            
+            <!-- Email -->
+            <div>
+              <label for="email" class="block text-sm font-medium text-neutral-400 mb-1">Email</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="votre@email.com" 
+                class="w-full px-4 py-3 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors text-white placeholder-neutral-500"
+                required
+              />
+            </div>
+            
+            <!-- Subject -->
+            <div>
+              <label for="subject" class="block text-sm font-medium text-neutral-400 mb-1">Sujet</label>
+              <input 
+                type="text" 
+                id="subject" 
+                name="subject" 
+                placeholder="Sujet de votre message" 
+                class="w-full px-4 py-3 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors text-white placeholder-neutral-500"
+                required
+              />
+            </div>
+            
+            <!-- Message -->
+            <div>
+              <label for="message" class="block text-sm font-medium text-neutral-400 mb-1">Message</label>
+              <textarea 
+                id="message" 
+                name="message" 
+                rows="5" 
+                placeholder="Votre message ici..." 
+                class="w-full px-4 py-3 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors text-white placeholder-neutral-500 resize-none"
+                required
+              ></textarea>
+            </div>
+            
+            <!-- Submit Button -->
+            <button 
+              type="submit" 
+              class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-all transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 flex items-center justify-center group"
+            >
+              <span class="mr-2">Envoyer le message</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="mt-20 max-w-4xl mx-auto">
+        <h3 class="text-2xl font-bold mb-8 text-center">
+          <span class="text-green-400">Questions</span> fréquentes
+        </h3>
+        
+        <div class="space-y-4">
+          <!-- FAQ Item 1 -->
+          <div class="bg-neutral-800 rounded-xl overflow-hidden border border-neutral-700 hover:border-green-500 transition-all">
+            <button class="flex justify-between items-center w-full p-5 text-left">
+              <span class="font-medium">Quels types de projets acceptez-vous ?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-400" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <div class="px-5 pb-5">
+              <p class="text-neutral-400">Je suis ouvert à une variété de projets, incluant le développement de jeux vidéo Unity, le développement web (front-end et back-end), ainsi que des applications 3D interactives. Je m'intéresse particulièrement aux projets innovants qui présentent des défis techniques intéressants.</p>
+            </div>
+          </div>
+          
+          <!-- FAQ Item 2 -->
+          <div class="bg-neutral-800 rounded-xl overflow-hidden border border-neutral-700 hover:border-green-500 transition-all">
+            <button class="flex justify-between items-center w-full p-5 text-left">
+              <span class="font-medium">Comment se déroule une collaboration avec vous ?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-400" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <div class="px-5 pb-5">
+              <p class="text-neutral-400">Le processus commence généralement par une consultation initiale pour comprendre vos besoins et objectifs. Nous établissons ensuite un cahier des charges, un planning et un budget. Pendant le développement, je maintiens une communication régulière et des mises à jour sur l'avancement. Je reste disponible pour les ajustements et le support après la livraison.</p>
+            </div>
+          </div>
+          
+          <!-- FAQ Item 3 -->
+          <div class="bg-neutral-800 rounded-xl overflow-hidden border border-neutral-700 hover:border-green-500 transition-all">
+            <button class="flex justify-between items-center w-full p-5 text-left">
+              <span class="font-medium">Êtes-vous disponible pour du travail à distance ?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-400" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <div class="px-5 pb-5">
+              <p class="text-neutral-400">Oui, je travaille principalement à distance et j'ai l'habitude de collaborer avec des équipes internationales. J'utilise divers outils de communication et de gestion de projet pour assurer une collaboration efficace, quel que soit l'emplacement géographique.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<div id="root">
+  <footer id="footer" class="bg-neutral-900 text-white pt-16 pb-8 border-t border-neutral-800 relative overflow-hidden">
+    <!-- Background effects -->
+    <div class="absolute inset-0 z-0 opacity-10">
+      <div class="absolute bottom-0 left-0 w-32 h-32 bg-green-500 rounded-full filter blur-3xl"></div>
+      <div class="absolute top-0 right-0 w-32 h-32 bg-green-500 rounded-full filter blur-3xl"></div>
+    </div>
+    
+    <!-- Gaming theme elements -->
+    <div class="absolute inset-0 z-0 opacity-5 select-none pointer-events-none">
+      <div class="absolute bottom-10 left-10 text-lg text-green-500">GAME OVER</div>
+      <div class="absolute top-10 right-10 text-lg text-green-500">CONTINUE?</div>
+    </div>
+
+    <div class="container mx-auto px-6 relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <!-- About Column -->
+        <div class="md:col-span-2">
+          <h3 class="text-xl font-bold mb-4 text-green-400">Adrien Roussel</h3>
+          <p class="text-neutral-400 mb-4">Développeur et Game Designer passionné par la création d'expériences interactives et immersives, spécialisé dans le développement de jeux vidéo avec Unity et la programmation web.</p>
+          <div class="flex space-x-4">
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com" aria-label="LinkedIn" class="text-neutral-400 hover:text-green-400 transition-colors">
+              <img src="http://adrien-roussel.com/images/icons/linkedin-logo.svg" alt="LinkedIn" width="30" height="32" class="w-6 h-6" />
+            </a>
+            <!-- GitHub icon -->
+            <a href="#" aria-label="GitHub" class="text-neutral-400 hover:text-green-400 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+            <!-- Twitter icon -->
+            <a href="#" aria-label="Twitter" class="text-neutral-400 hover:text-green-400 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Quick Links Column -->
+        <div>
+          <h3 class="text-xl font-bold mb-4 text-green-400">Navigation</h3>
+          <ul class="space-y-2">
+            <li>
+              <a href="#hero" class="text-neutral-400 hover:text-green-400 transition-colors flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+                Accueil
+              </a>
+            </li>
+            <li>
+              <a href="#competences" class="text-neutral-400 hover:text-green-400 transition-colors flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+                Compétences
+              </a>
+            </li>
+            <li>
+              <a href="#projets" class="text-neutral-400 hover:text-green-400 transition-colors flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+                Projets
+              </a>
+            </li>
+            <li>
+              <a href="#experiences" class="text-neutral-400 hover:text-green-400 transition-colors flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+                Expériences
+              </a>
+            </li>
+            <li>
+              <a href="#formations" class="text-neutral-400 hover:text-green-400 transition-colors flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+                Formations
+              </a>
+            </li>
+            <li>
+              <a href="#temoignages" class="text-neutral-400 hover:text-green-400 transition-colors flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+                Témoignages
+              </a>
+            </li>
+            <li>
+              <a href="#contact" class="text-neutral-400 hover:text-green-400 transition-colors flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Contact Info Column -->
+        <div>
+          <h3 class="text-xl font-bold mb-4 text-green-400">Contact</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-green-400 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <span class="text-neutral-400">contact@adrien-roussel.com</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-green-400 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span class="text-neutral-400">France</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Language selector -->
+      <div class="flex justify-center space-x-4 my-8">
+        <button aria-label="Français" class="transition-transform hover:scale-110">
+          <div class="flex items-center space-x-2 border border-green-500 bg-green-500/10 rounded-full px-4 py-2">
+            <img src="http://adrien-roussel.com/images/icons/french.svg" alt="Français" width="40" height="40" class="w-6 h-6" />
+            <span class="text-green-400 font-medium">Français</span>
+          </div>
+        </button>
+        <button aria-label="English" class="transition-transform hover:scale-110 opacity-50">
+          <div class="flex items-center space-x-2 border border-neutral-700 bg-neutral-800/50 rounded-full px-4 py-2 hover:border-green-500 hover:bg-green-500/10">
+            <img src="http://adrien-roussel.com/images/icons/english.svg" alt="English" width="40" height="40" class="w-6 h-6" />
+            <span class="text-neutral-400 font-medium">English</span>
+          </div>
+        </button>
+      </div>
+
+      <!-- Back to top button -->
+      <div class="flex justify-center my-8">
+        <a href="#hero" class="inline-block bg-neutral-800 hover:bg-green-500/20 text-white p-3 rounded-full border border-neutral-700 hover:border-green-500 transition-all transform hover:scale-110">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Copyright -->
+      <div class="border-t border-neutral-800 pt-8 mt-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <p class="text-neutral-500 text-sm mb-4 md:mb-0">&copy; 2023 Adrien Roussel. Tous droits réservés.</p>
+          <div class="flex items-center">
+            <img src="http://adrien-roussel.com/images/lumos.svg" alt="Lumos" width="1177" height="1123" class="w-5 h-5 mr-2 opacity-50" />
+            <p class="text-neutral-500 text-sm">Conçu avec passion et code</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Gaming inspired footer -->
+      <div class="mt-8 text-center">
+        <div class="inline-block px-3 py-1 bg-neutral-800 rounded-lg border border-neutral-700">
+          <p class="text-neutral-500 text-xs">
+            <span class="text-green-400">Press</span> Start <span class="text-green-400">to</span> Continue
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>
